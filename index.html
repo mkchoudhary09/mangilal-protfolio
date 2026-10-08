@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mangilal Choudhary | B.Tech 1st Year Portfolio</title>
+  <meta name="description" content="Portfolio of Mangilal Choudhary - B.Tech First Year Student at JECRC University, Jaipur. Exploring C Programming, Computer Fundamentals, and Git.">
+  <meta name="keywords" content="Mangilal Choudhary, B.Tech First Year, JECRC University, Jaipur, Portfolio, C Programming, Git, GitHub">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="warm-light">
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <div class="toast-icon" id="toast-icon">✓</div>
+    <div class="toast-message" id="toast-message">Notification message</div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Mangilal Choudhary Home">
+        <span class="brand-badge">MC</span>
+        <span class="brand-text">Mangilal<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Warm Color Mode" title="Toggle warm dark mode">
+          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon dark-icon">🌙</span>
+        </button>
+
+        <!-- Direct Contact Button -->
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="menu-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education & Achievements</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#hobbies" class="mobile-nav-link">Hobbies</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Say Hello</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / HOME SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-decorations" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-pattern"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>B.Tech First Year Student &bull; Jaipur, India</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="highlight-text">Mangilal Choudhary</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Aspiring Software Engineer & Tech Enthusiast pursuing B.Tech in Computer Science. Passionate about <strong>C Programming</strong>, <strong>Computer Fundamentals</strong>, and modern <strong>Git & GitHub</strong> workflows. Dedicated to continuous learning and creative collaboration.
+          </p>
+
+          <!-- Interactive Action Buttons -->
+          <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">
+              <span>Explore My Journey</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#skills" class="btn btn-secondary">
+              <span>View Skills</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Quick Highlights Row -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number">1st Year</span>
+              <span class="stat-label">B.Tech Engineering</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-number">Jaipur</span>
+              <span class="stat-label">JECRC University</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Curiosity & Drive</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-card-glow"></div>
+            <div class="profile-card-inner">
+              <div class="avatar-wrapper">
+                <div class="avatar-ring"></div>
+                <div class="avatar-inner">
+                  <img src="profile.jpg" alt="Mangilal Choudhary" class="avatar-img">
+                </div>
+                <span class="avatar-badge" title="Actively Learning">⚡</span>
+              </div>
+
+              <div class="profile-details">
+                <h3 class="profile-name">Mangilal Choudhary</h3>
+                <p class="profile-role">B.Tech CSE Undergraduate</p>
+                <p class="profile-location">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Jaipur, Rajasthan, India
+                </p>
+              </div>
+
+              <!-- Interactive Quick Badges -->
+              <div class="profile-badges">
+                <span class="badge-tag">💻 C Programming</span>
+                <span class="badge-tag">⚙️ Computer Fundamentals</span>
+                <span class="badge-tag">🐙 Git & GitHub</span>
+                <span class="badge-tag">🤝 Team Player</span>
+              </div>
+
+              <!-- Quick Email Snippet -->
+              <div class="profile-email-snippet" id="quick-copy-snippet" title="Click to copy email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                <span class="snippet-text">mangilal.26bcon2367@jecrcu.edu.in</span>
+                <button class="copy-btn" aria-label="Copy Email" type="button">📋</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subheading">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">
+            A curious student with a passion for computers, technology, and building a foundation for future engineering innovations.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Story Card -->
+          <div class="about-card main-story-card">
+            <div class="card-icon-header">
+              <span class="card-badge-icon">💡</span>
+              <span class="card-badge-label">Personal Journey</span>
+            </div>
+            <h3 class="about-heading">Curious Mind, Problem Solver & Lifelong Learner</h3>
+            <p>
+              Hi! I'm <strong>Mangilal Choudhary</strong>, currently in my <strong>first year of B.Tech (Computer Science & Engineering)</strong> at <strong>JECRC University, Jaipur</strong>. Since an early age, I have been deeply fascinated by how computers function behind the screen—how hardware parts interact, and how lines of code can create interactive tools.
+            </p>
+            <p>
+              Starting my engineering degree has opened up exciting doors to delve into the core principles of technology. Currently, I am sharpening my analytical skills through <strong>C programming</strong>, exploring <strong>computer fundamentals & architecture</strong>, and practicing modern version control with <strong>Git and GitHub</strong>.
+            </p>
+            <p>
+              Beyond the code editor, I take pride in being a <strong>quick learner</strong> and a <strong>supportive team worker</strong> who values clear communication, time management, and bringing positive energy to every group task.
+            </p>
+
+            <div class="about-quick-specs">
+              <div class="spec-item">
+                <span class="spec-label">Current Status</span>
+                <span class="spec-value">B.Tech 1st Year (CSE)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">College / University</span>
+                <span class="spec-value">JECRC University, Jaipur</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Location</span>
+                <span class="spec-value">Jaipur, Rajasthan, India</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mindset</span>
+                <span class="spec-value">Growth & Collaborative</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Highlights Column -->
+          <div class="about-side-cards">
+            <!-- Location Card -->
+            <div class="about-card side-card location-card">
+              <div class="side-card-icon">📍</div>
+              <div>
+                <h4 class="side-card-title">Based in Jaipur</h4>
+                <p class="side-card-desc">
+                  Proudly studying and living in the historic yet rapidly growing tech and educational hub of <strong>Jaipur, Rajasthan</strong>. Known for vibrant culture and a flourishing student engineering community.
+                </p>
+              </div>
+            </div>
+
+            <!-- Learning Philosophy Card -->
+            <div class="about-card side-card philosophy-card">
+              <div class="side-card-icon">🚀</div>
+              <div>
+                <h4 class="side-card-title">Fast & Continuous Learner</h4>
+                <p class="side-card-desc">
+                  I believe consistent daily practice beats sudden bursts. Whether mastering memory pointers in C or understanding operating system fundamentals, I dive deep into core concepts with patience and rigor.
+                </p>
+              </div>
+            </div>
+
+            <!-- Team Player Card -->
+            <div class="about-card side-card team-card">
+              <div class="side-card-icon">🤝</div>
+              <div>
+                <h4 class="side-card-title">Teamwork & Time Management</h4>
+                <p class="side-card-desc">
+                  Strong believer in collaborative synergy. I balance classroom lectures, coding practice, and personal interests through disciplined scheduling and clear communication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & ACHIEVEMENTS SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subheading">My Academic Pathway</span>
+          <h2 class="section-title">Education & Achievements</h2>
+          <p class="section-description">
+            A solid academic foundation spanning school milestones to university-level engineering studies.
+          </p>
+        </div>
+
+        <div class="education-achievements-container">
+          <!-- Timeline: Education -->
+          <div class="timeline-column">
+            <h3 class="column-subtitle">
+              <span class="subtitle-icon">🎓</span> Academic Milestones
+            </h3>
+
+            <div class="timeline">
+              <!-- Item 1: B.Tech -->
+              <div class="timeline-item">
+                <div class="timeline-marker current">
+                  <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-card">
+                  <div class="timeline-badge">2026 &ndash; Present &bull; In Progress</div>
+                  <h4 class="timeline-title">Bachelor of Technology (B.Tech) - 1st Year</h4>
+                  <p class="timeline-institution">JECRC University, Jaipur, Rajasthan</p>
+                  <p class="timeline-details">
+                    Currently pursuing foundational engineering coursework in Computer Science. Focus subjects include <strong>C Programming & Problem Solving</strong>, <strong>Computer Fundamentals</strong>, Engineering Mathematics, and basic software design.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>C Programming</span>
+                    <span>Computer Architecture</span>
+                    <span>Engineering Maths</span>
+                    <span>Git Workflow</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: 12th Grade -->
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-card">
+                  <div class="timeline-badge">Senior Secondary (Class XII)</div>
+                  <h4 class="timeline-title">12th Grade - Science & Mathematics</h4>
+                  <p class="timeline-institution">Senior Secondary Board Education</p>
+                  <p class="timeline-details">
+                    Completed senior secondary education with strong analytical and scientific grounding in Physics, Chemistry, and Mathematics (PCM). Developed a keen interest in computing and quantitative reasoning.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>Physics</span>
+                    <span>Chemistry</span>
+                    <span>Mathematics</span>
+                    <span>Analytical Reasoning</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: 10th Grade -->
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-card">
+                  <div class="timeline-badge">Secondary School (Class X)</div>
+                  <h4 class="timeline-title">10th Grade - General Academics</h4>
+                  <p class="timeline-institution">Secondary School Education</p>
+                  <p class="timeline-details">
+                    Successfully completed secondary schooling with commendable academic performance. Built essential foundations in basic sciences, mathematics, and logical comprehension.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>Science</span>
+                    <span>Mathematics</span>
+                    <span>Social Studies</span>
+                    <span>Academic Distinction</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column: Achievements & Academic Experience -->
+          <div class="achievements-column">
+            <h3 class="column-subtitle">
+              <span class="subtitle-icon">🏆</span> Academic Experience & Recognitions
+            </h3>
+
+            <div class="achievement-cards-grid">
+              <div class="achievement-card">
+                <div class="achievement-icon">⭐</div>
+                <div class="achievement-body">
+                  <h4 class="achievement-title">Consistent Academic Dedication</h4>
+                  <p class="achievement-text">
+                    Demonstrated consistent diligence and strong performance throughout 10th and 12th grades, laying a solid mathematical basis for higher computer engineering studies.
+                  </p>
+                </div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-icon">🏛️</div>
+                <div class="achievement-body">
+                  <h4 class="achievement-title">Engineering Transition & University Induction</h4>
+                  <p class="achievement-text">
+                    Successfully admitted to JECRC University, Jaipur, actively participating in department orientations, coding lab sessions, and technical introductory modules.
+                  </p>
+                </div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-icon">📊</div>
+                <div class="achievement-body">
+                  <h4 class="achievement-title">Presentations & Classroom Leadership</h4>
+                  <p class="achievement-text">
+                    Actively engaging in academic presentations, seminar discussions, and group study sessions, displaying clarity of thought and articulate communication.
+                  </p>
+                </div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-icon">💻</div>
+                <div class="achievement-body">
+                  <h4 class="achievement-title">Self-Driven Coding Milestones</h4>
+                  <p class="achievement-text">
+                    Completed multiple basic algorithmic exercises in C, including logic building puzzles, arrays, functions, and structured problem-solving programs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote Banner -->
+            <div class="warm-quote-box">
+              <p class="quote-text">
+                "The foundation of every great engineer begins with curiosity in the first year and the discipline to practice every single day."
+              </p>
+              <span class="quote-author">&mdash; Mangilal's Learning Moto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subheading">What I Bring to the Table</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-description">
+            A balanced mix of technical programming fundamentals and essential professional soft skills.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Technical Skills -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper tech-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Technical Foundations</h3>
+                <p class="category-subtitle">Core computer science & programming tools</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Skill: C Programming -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">🔹</span> C Programming
+                  </span>
+                  <span class="skill-badge">Core Focus</span>
+                </div>
+                <p class="skill-desc">
+                  Variables, control flow, loops, functions, arrays, pointers, structures, and basic algorithms.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-80" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Computer Fundamentals -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">🔹</span> Computer Fundamentals
+                  </span>
+                  <span class="skill-badge">Strong Basics</span>
+                </div>
+                <p class="skill-desc">
+                  Understanding CPU architecture, RAM, storage, binary number systems, operating system concepts, and data flow.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-85" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Basic Git & GitHub -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">🔹</span> Basic Git & GitHub
+                  </span>
+                  <span class="skill-badge">Active Practice</span>
+                </div>
+                <p class="skill-desc">
+                  Version control, git init, commits, branching basics, remote repositories, push/pull, and README documentation.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-75" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Problem Solving & Logic -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">🔹</span> Problem Solving & Logic Building
+                  </span>
+                  <span class="skill-badge">Continuous</span>
+                </div>
+                <p class="skill-desc">
+                  Breaking down mathematical problems into algorithmic steps, pseudocode, and debugging code logic.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-80" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Soft & Professional Skills -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper soft-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Professional & Soft Skills</h3>
+                <p class="category-subtitle">Interpersonal & cognitive strengths</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Soft Skill 1: Good Learner -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">🌱</span> Quick & Adaptive Learner
+                  </span>
+                  <span class="skill-badge highlight-badge">High Aptitude</span>
+                </div>
+                <p class="skill-desc">
+                  Quickly absorbs new technical syntax and engineering concepts; proactive in self-study and asking insightful questions.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-90" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Soft Skill 2: Good Team Worker -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">🤝</span> Good Team Worker
+                  </span>
+                  <span class="skill-badge highlight-badge">Collaborative</span>
+                </div>
+                <p class="skill-desc">
+                  Thrives in peer study circles and lab partnerships. Respects different opinions, shares insights, and helps teammates solve hurdles.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-92" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Soft Skill 3: Time Management -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">⏰</span> Time Management
+                  </span>
+                  <span class="skill-badge highlight-badge">Disciplined</span>
+                </div>
+                <p class="skill-desc">
+                  Efficiently organizes daily college lectures, programming assignments, revision routines, and personal recreational time.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-85" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Soft Skill 4: Presentation Skills -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-bullet">🎤</span> Presentation & Communication
+                  </span>
+                  <span class="skill-badge highlight-badge">Confident</span>
+                </div>
+                <p class="skill-desc">
+                  Skilled in explaining technical thoughts clearly, structuring slide decks, and participating in college seminars with poise.
+                </p>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill fill-82" style="width: 82%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES & INTERESTS SECTION -->
+    <section id="hobbies" class="section hobbies-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subheading">Beyond the Books</span>
+          <h2 class="section-title">Hobbies & Personal Interests</h2>
+          <p class="section-description">
+            What keeps my energy high, sparks creative thinking, and enriches my problem-solving ability outside academics.
+          </p>
+        </div>
+
+        <div class="hobbies-grid">
+          <!-- Hobby Card 1: Playing Games -->
+          <div class="hobby-card">
+            <div class="hobby-icon-bg">🎮</div>
+            <div class="hobby-badge">Tactical & Strategy</div>
+            <h3 class="hobby-title">Playing Video & Strategy Games</h3>
+            <p class="hobby-desc">
+              Gaming is more than fun for me—it's a playground for fast decision-making, hand-eye coordination, tactical problem solving, and real-time team coordination under pressure.
+            </p>
+            <div class="hobby-takeaways">
+              <span class="takeaway-pill">⚡ Quick Reflexes</span>
+              <span class="takeaway-pill">🎯 Strategic Planning</span>
+              <span class="takeaway-pill">🤝 Teamwork Under Pressure</span>
+            </div>
+          </div>
+
+          <!-- Hobby Card 2: Computer Curiosity -->
+          <div class="hobby-card">
+            <div class="hobby-icon-bg">🖥️</div>
+            <div class="hobby-badge">Tech Enthusiast</div>
+            <h3 class="hobby-title">Exploring Computer Hardware & Systems</h3>
+            <p class="hobby-desc">
+              Ever curious about the machinery that powers computing. I enjoy exploring computer parts, comparing CPU/GPU benchmarks, optimizing operating system setups, and diagnosing hardware specs.
+            </p>
+            <div class="hobby-takeaways">
+              <span class="takeaway-pill">🔧 Hardware Exploration</span>
+              <span class="takeaway-pill">⚙️ System Optimization</span>
+              <span class="takeaway-pill">💡 Technology Trends</span>
+            </div>
+          </div>
+
+          <!-- Hobby Card 3: New Tech & Gadgets -->
+          <div class="hobby-card">
+            <div class="hobby-icon-bg">🌐</div>
+            <div class="hobby-badge">Curiosity Driven</div>
+            <h3 class="hobby-title">Discovering Emerging Tech & Open Source</h3>
+            <p class="hobby-desc">
+              Browsing GitHub repositories, watching tutorials on emerging programming tools, and keeping track of advancements in software and modern digital innovations.
+            </p>
+            <div class="hobby-takeaways">
+              <span class="takeaway-pill">📖 Tech Reading</span>
+              <span class="takeaway-pill">🐙 GitHub Exploring</span>
+              <span class="takeaway-pill">🚀 Future Skills</span>
+            </div>
+          </div>
+
+          <!-- Hobby Card 4: Team Activities & Discussions -->
+          <div class="hobby-card">
+            <div class="hobby-icon-bg">🗣️</div>
+            <div class="hobby-badge">Interpersonal</div>
+            <h3 class="hobby-title">Group Discussions & Tech Debates</h3>
+            <p class="hobby-desc">
+              Engaging with fellow first-year peers to discuss classroom concepts, exchange coding tips, and collaborate on challenging programming assignments.
+            </p>
+            <div class="hobby-takeaways">
+              <span class="takeaway-pill">💬 Active Discussion</span>
+              <span class="takeaway-pill">👥 Peer Learning</span>
+              <span class="takeaway-pill">📈 Growth Mindset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subheading">Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <p class="section-description">
+            Have a question, want to collaborate on academic learning, or simply want to say hi? Feel free to reach out anytime!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left: Contact Details & Quick Info -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Contact Information</h3>
+            <p class="contact-panel-desc">
+              I'm always open to discussing new ideas, tech discussions, academic collaborations, and learning opportunities.
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Email Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Official University Email</span>
+                  <a href="mailto:mangilal.26bcon2367@jecrcu.edu.in" class="contact-value" id="direct-email-link">mangilal.26bcon2367@jecrcu.edu.in</a>
+                  <button type="button" class="btn btn-xs copy-email-btn" id="copy-email-btn" aria-label="Copy Email to Clipboard">
+                    📋 Copy Email
+                  </button>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Location</span>
+                  <p class="contact-value">Jaipur, Rajasthan, India</p>
+                  <span class="contact-sub">JECRC University Campus</span>
+                </div>
+              </div>
+
+              <!-- Academic Status -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Student Status</span>
+                  <p class="contact-value">B.Tech First Year (CSE)</p>
+                  <span class="contact-sub">Available for study groups & hackathons</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Warm Creative Quote -->
+            <div class="contact-quote-card">
+              <span class="quote-sparkle">✨</span>
+              <p>"Great connections start with a friendly message. Looking forward to hearing from you!"</p>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Send Message Form -->
+          <div class="contact-form-panel">
+            <h3 class="form-title">Send Me a Message</h3>
+            <p class="form-subtitle">Fill out the form below to send an instant message or inquiry.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="text" id="sender-name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                  </div>
+                  <span class="form-error" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email" class="form-label">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="email" id="sender-email" name="email" class="form-input" placeholder="e.g. rahul@example.com" required>
+                  </div>
+                  <span class="form-error" id="email-error">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <input type="text" id="sender-subject" name="subject" class="form-input" placeholder="e.g. Academic Discussion / Question">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="sender-message" name="message" rows="5" class="form-textarea" placeholder="Write your message here... I'd love to connect!" required></textarea>
+                </div>
+                <span class="form-error" id="message-error">Please write a message</span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                  <span class="btn-text">Send Message</span>
+                  <svg class="btn-send-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+                <a id="mailto-fallback-btn" href="mailto:mangilal.26bcon2367@jecrcu.edu.in" class="btn btn-secondary btn-mail-app">
+                  <span>Open in Mail App</span>
+                </a>
+              </div>
+
+              <!-- Form Success Message Banner -->
+              <div class="form-feedback-card hidden" id="form-feedback">
+                <div class="feedback-icon">🎉</div>
+                <div class="feedback-text">
+                  <h4>Thank you! Your message was sent.</h4>
+                  <p>I appreciate you reaching out and will reply to your email promptly.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <span class="brand-badge">MC</span>
+          <span class="brand-text">Mangilal Choudhary<span class="accent-dot">.</span></span>
+        </a>
+        <p class="footer-bio">
+          B.Tech First Year Student at JECRC University, Jaipur. Exploring the vast realm of computer science with curiosity, dedication, and teamwork.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-nav-title">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education & Achievements</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-connect">
+        <h4 class="footer-nav-title">Direct Inquiries</h4>
+        <p class="footer-contact-item">
+          <strong>Email:</strong> <br>
+          <a href="mailto:mangilal.26bcon2367@jecrcu.edu.in" class="footer-mail-link">mangilal.26bcon2367@jecrcu.edu.in</a>
+        </p>
+        <p class="footer-contact-item">
+          <strong>Location:</strong> Jaipur, Rajasthan, India
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Mangilal Choudhary. Designed with Warm Creative aesthetics.
+        </p>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
